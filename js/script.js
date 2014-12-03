@@ -21,6 +21,7 @@ $( ".formulario" ).submit(function( event ) {
 		});
 	});
 	$('.check').prop('checked', false);
+	$(".disable").slideUp("slow");
 	event.preventDefault();
 
 	
@@ -29,7 +30,7 @@ $( ".formulario" ).submit(function( event ) {
 $('input[name="filtros"]').change(function(){
 	$(".informacion").empty();
 	var checkedEnable = []; //0,1,2
-	var filterUrls = [" type:/music/artist", " type:/people/person", " type:/book/"];
+	var filterUrls = [" type:/music/", " type:/people/", " type:/book/"];
 	var filterString = "";
 	$("input[name=filtros]:checked").each(function(){
 		checkedEnable.push(this.value);
