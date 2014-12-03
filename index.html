@@ -1,56 +1,114 @@
-<!DOCTYPE html>
-  <head>
+<!Doctype HTML>
+<html>
+	<head>
+		<title>Learning bootstrap and javascript</title>
+		<!--Loading css files-->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css.map">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css.map">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!--End of loading css files-->
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">HOME</a>
+				</div>
+				<div class="colapse navbar-colapse">
+					<ul class="nav navbar-nav ">
+						<li>
+							<a href="enlaces.html">Otra pagina</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="jumbotron top">
+			<div class="container">
+				<div class="row">
+					<h1>Learning bootstrap and javascript</h1>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">Filters</div>
+						<div class="panel-body">Please check the filters you want to show a better result
+							<div>
+								<input type="checkbox" name="filtros" value="0" class="check"> Music<br>
+								<input type="checkbox" name="filtros" value="1" class="check"> People<br>
+								<input type="checkbox" name="filtros" value="2" class="check"> Books<br>
+							</div>
+						</div>
+						<div class="disable panel-heading">Filters</div>
+						<div class="disable panel-body">
+							<div class="disable subfilterMusic">
+								<div>
+									<h4>Music Filters</h4>
+									<input type="checkbox" name="subfiltros" value="0"> Rock<br>
+									<input type="checkbox" name="subfiltros" value="1" > Pop<br>
+									<input type="checkbox" name="subfiltros" value="2"> Jazz<br>
+									<input type="checkbox" name="subfiltros" value="3"> Electro<br>
+								</div>
+							</div>
+							<div class="disable subfilterPeople">
+								<div>
+									<h4>People Filters</h4>
+									<input type="checkbox" name="subfiltros" value="4"> Rock<br>
+									<input type="checkbox" name="subfiltros" value="5" > Pop<br>
+									<input type="checkbox" name="subfiltros" value="6"> Jazz<br>
+									<input type="checkbox" name="subfiltros" value="7"> Electro<br>
+								</div>
+							</div>
+							<div class="disable subfilterBooks">
+								<div>
+									<h4>Books Filters</h4>
+									<input type="checkbox" name="subfiltros" value="8"> Rock<br>
+									<input type="checkbox" name="subfiltros" value="9" > Pop<br>
+									<input type="checkbox" name="subfiltros" value="10"> Jazz<br>
+									<input type="checkbox" name="subfiltros" value="11"> Electro<br>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="panel panel-default">
+						<div class="panel-heading">Results</div>
+						<div class="panel-body">
+							<form class="formulario">
+								<input type="text" class="texto">
+								<input type="submit" value="Submit">
+							</form>
+							
+							<table class="table table-striped">
+								<thead>
+									<th>#</th>
+									<th>Name</th>
+								</thead>
+								<tbody class="informacion">
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
 
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-theme.map" rel="stylesheet">
-
-    <link href="css/styles.css" rel="stylesheet">
-
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Bootstrap y Javascript</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li >
-              <a href="enlaces.html" >Enlaces</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="jumbotron top">
-      <div class="container">
-        <h1>Aprendiendo Bootstrap y Javascript</h1>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-
-
-
-        </div>
-        <div class="col-md-8">
-          <form >
-            <input type="text" name="search"/> <input type="submit" value="Search" id="search-button" />
-          </form>
-
-          <div class="informacion"></div>
-        </div>
-      </div>
-    </div>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-
-  </body>
+		<!--Loading scripts-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/npm.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<!--End of loading scripts-->
+	</body>
 </html>
+
